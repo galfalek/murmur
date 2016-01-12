@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( Jackpot )
+find_package( OpenCV REQUIRED )
+add_executable( Jackpot Jackpot.cpp )
+target_link_libraries( Jackpot ${OpenCV_LIBS} )
